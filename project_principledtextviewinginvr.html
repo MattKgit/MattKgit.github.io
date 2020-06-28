@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Principled Text Viewing in VR</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+
+
+		<!-- Header -->
+		<header>
+			<p></p>
+		</header>
+		<!-- Main -->
+		<div id="main">
+
+			<ul class="actions">
+				<li><a href="index.html#main" class="button">XR Projects</a></li>
+			</ul>
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Principled Text Viewing<br>in VR<br>Capstone Project</h1>
+					<p>Basic to interaction in Virtual Reality is the need
+						to read text, but reading text is often a challenge in VR. Often times a user must contort or
+						move in order to read
+						a piece of text. Sometimes the text must be moved or reoriented by the user. My capstone project
+						in the <a href="https://xrterra.com/programs/developer/">XR Terra AR & VR Developer Certificate
+							Program</a> was an
+						exploration
+						to address the difficulties of reading text in VR, by uncovering and implementing principled
+						ways of supporting
+						reliable text viewing in VR.</p>
+				</header>
+				<div class="image main"><img src="images/principledtextviewing_large.png" alt="" /></div>
+				<p>Many factors affect a user's ability to read in VR. These include resolution, distance, orientation
+					of the text,
+					orientation of the user, size of the text, font choice, contrast with the background, color, reading
+					angles, and
+					required movement by the user. Ignoring these factors can create illegible text, discomfort for the
+					user, and a lag
+					in the user attempting to read.</p>
+				<p><b>Virtually Reality experiences do not universally suport easy reading of moderate-to-long passages.
+						What can be done to improve the experience of reading in VR?</b></p>
+				<p>Whether text is at a far distance like a billboard, a medium distance like a sign, or a close
+					distance like a
+					document, users want it readable. Users could be given the choice to scale the text to the most
+					comfortable size for
+					reading. <b>The text can maintain the same angular size independent of distance.</b></p>
+				<p>Users are able to read text passages of certain widths/angles simply by moving their eyes, without
+					moving their
+					necks or bodies. <b>The width of a text passage can be controlled to minimize unintended
+						movement.</b></p>
+				<p>Users comfortably tilt their heads down while reading, with their eyes slightly titled up; generally
+					averaging about six degrees below the horizon. <b>Text can be angled for actual reading posture.</b>
+				</p>
+				<p>In traditional text media like books, users turn pages once in a while. Electronic 2D media often
+					requires the user to
+					scroll a long passage. It is possible to eliminate the need for scrolling in VR that requires grand
+					body movements,
+					and minimize learned gestures. <b>Text can be parsed into readable chunks, and paged forward or
+						backward by a single
+						squeeze of the left or right hand respectively.</b> Essentially a slight squeeze can "turn a
+					page". Displaying a page count
+					is important so users know how far they are into a passage. Scrollbars do generally have the
+					advantage of giving a user
+					a sense of placement in a passage.</p>
+				<p>In VR, we have the ability to change the rules of reality. Rather than requiring the user to move or
+					to move a piece
+					of text to read, <b>we can have the text always face the user.</b></p>
+				<p>When using Unity to create Virtual Reality experiences, it is best to use <b>TextMesh Pro (TMP)</b>.
+					Any font can be
+					converted into
+					a TextMesh Pro asset in Unity. This creates a high resolution font atlas, and uses
+					<a href="https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf">SDF
+						rendering</a> to provide
+					clear characters across a wide range of scaling. <b>Choosing a easy to read font, and a relatively
+						simple topography</b>,
+					like <a href="https://medium.com/@jaimie.bautista/ty-roboto-9244ce6343a5">roboto</a> <b> yields good
+						results.</b></p>
+				<p>Color of the font and background should contrast to aid readibility. With nearly 10% of the
+					population having color
+					blindness, grayscale is a generally good choice, of course there is <a
+						href="https://www.quora.com/Which-is-better-for-the-eyes-a-white-background-with-black-text-a-black-background-with-white-text-or-sepia-mode">research</a>
+					and opinions. From samples of other VR experiences, light gray on dark gray was comfortably
+					readable. It was chosen
+				</p>
+				<p>Comfortable reading of medium-to-long passages of text may be faciliated by having text maintain the
+					same
+					angular size independent of distance, face the user, adopt a comfortable tilted viewing angle, and
+					have a limit of
+					the angle/width of a passage to eliminate unnecessary neck and body movements. TextMesh Pro text,
+					with a good font
+					choice, and comfortable color contrast keeps text easy to read. Implementing a means of paging text
+					to minimize
+					unnecessary movement and gestures is useful for allowing a person to read without too much movement.
+				</p>
+				<p>To save on processing and posssible flicker, updating the angular size should only be done when there
+					is a
+					significant change in distance, which experientially seems to be about .1 meters. Similarly having
+					the text face the
+					user need only be updated when the user moves significantly. Adjusting the tilt of the text can be
+					done when there
+					is a significant change in the head up/down movement.</p>
+				<h2>Accomplishments</h2>
+				<div class="row">
+					<div>
+						<ul class="alt">
+							<li>Researched, designed, and developed a functional demonstration of the above findings in
+								Unity for the Oculus Quest</li>
+							<li>Text scales based on distance from the text</li>
+							<li>Text always faces the user</li>
+							<li>Text assumes a comfortable reading tilt</li>
+							<li>Text angle and scale update only after significant user movement</li>
+							<li>The width of the text body is within an angle of minimal neck movement</li>
+							<li>Text is TextMesh Pro, roboto with a font atlas of a high resolution, and grayscale</li>
+							<li>Text is presented as pages, with a page count and total, requiring simple squeezing of
+								left and right hand controllers to change a page</li>
+							<li>A user can comfortably read medium-to-long passages of text in this manner</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<h2>Media</h2>
+				<div class="row">
+					<span style="text-align: center">Video Demonstration of Project (2 mins)
+						<video width="700" controls>
+							<source src="video/principledtextviewingcapstone1.mp4" type="video/mp4">Your browser does
+							not support the video tag.</video>
+					</span>
+				</div>
+
+				<div class="row">
+					<p><span class="image left"><img src="images/ptv1_large.png" alt="" />Text is always legible</span>
+					</p>
+					<p><span class="image right"><img src="images/ptv2_large.png" alt="" />Text always faces the
+							user</span></p>
+					<p><span class="image left"><img src="images/ptv4_large.png" alt="" />Present text at appropriate
+							angles and font</span></p>
+					<p><span class="image right"><img src="images/ptv5_large.png" alt="" />Distance-Independent
+							Millimeter</span></p>
+					<p><span class="image left"><img src="images/ptv6_large.png" alt="" />Text scales to maintain
+							legibility</span></p>
+				</div>
+			</section>
+
+		</div>
+
+
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>mattkaminski@alum.mit.edu&nbsp;&nbsp;</li><a href="https://www.linkedin.com/in/kaminskimatthew/"
+					class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+				<li><a href="index.html#main">Matt Kaminski XR Portfolio</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

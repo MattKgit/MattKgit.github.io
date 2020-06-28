@@ -1,104 +1,135 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>VR Crane Simulator</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>VR Crane Simulator</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
-				
+<body class="is-preload">
 
-				<!-- Header -->
-					<header><p></p></header>
-				<!-- Main -->
-					<div id="main">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-						<ul class="actions">
-							<li><a href="index.html#main" class="button">XR Projects</a></li>
+
+
+		<!-- Header -->
+		<header>
+			<p></p>
+		</header>
+		<!-- Main -->
+		<div id="main">
+
+			<ul class="actions">
+				<li><a href="index.html#main" class="button">XR Projects</a></li>
+			</ul>
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>VR Crane Simulator<br>
+						Packet39</h1>
+					<p>As part of <a href="https://xrterra.com/programs/developer/">XR Terra AR & VR Developer
+							Certificate Program</a>, we had the opportunity to work with a proven high-tech solution
+						provider <a href="https://packet39.com/">Packet39</a>. Given the problem of creating a crane
+						simulator in VR and collecting relevant performance measurements, we needed to model the physics
+						of the crane, create controls for an operator seated in the cab, and map use of the controls to
+						movements of the crane in VR.</p>
+				</header>
+				<div class="image main"><img src="images/CraneSimulator_large.png" alt="" /></div>
+				<p>This VR experience is a prototype simulator for training an operator to control a crane on a job site
+					to perform
+					tasks. Virtual reality is an important training tool, to provide an environment to train which is
+					safer and less
+					expensive than an actual crane. In it, the user is seated in a cab of a crane and presented with
+					four levers and two
+					buttons. After tapping a button which serves as an ignition, the user can manipulate one lever to
+					rotate the cab;
+					the user rotates with the cab. Other levers control boom elevation, sub boom extension, and lowering
+					and raising a
+					magnetic hook. The magnet is turned on and off with another button.</p>
+				<p>In the simulation the user is tasked with controlling the crane to pick up a load and place it in an
+					elevated target
+					position. Performance measures of speed and accuracy are provided to the user at the end of the
+					simulation.</p>
+				<h2>Responsibilities</h2>
+				<div class="row">
+					<div>
+						<ul class="alt">
+							<li>As Team Lead, led daily meetings with outlined agendas, kept a calendar, and updated the
+								Tello board</li>
+							<li>Broke down needed functionality into tasks to implement</li>
+							<li>Helped initially shape crucial content and structure in the design document</li>
+							<li>Helped prepare critical questions for the client</li>
+							<li>Worked out the 3D physics in Unity both to replicate controls and the consequential
+								movements of a crane</li>
+							<li>Enabled crane to have a magnetic hook to pick up and transport loads</li>
+							<li>Incorporated metrics on successful placement, and time taken to complete the task, and
+								presented information tothe user at the end of the task</li>
+							<li>Created controls to rotate the cab left or right, raise or lower the boom, extend or
+								retract the sub boom, and lower and raise the hook.</li>
+							<li>Created a button to act as an ignition switch which needed to be pressed to start and
+								end the activity, and which enabled the other controls</li>
+							<li>Created a button to serve as a magnet on the hook, to pick up and release the load</li>
+							<li>Helped integrate setting materials</li>
+							<li>Helped to integrate sound effects accompanying button pressing, as well as for each of
+								the four level controls</li>
+							<li>Displayed instructions to the user which could be referenced throughout the simulation
+								by looking up</li>
+							<li>Worked on hand posture and movement to activate levers in VR</li>
 						</ul>
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>VR Crane Simulator<br>
-									Packet39</h1>
-									<p>As part of <a href= "https://xrterra.com/programs/developer/">XR Terra AR & VR Developer Certificate Program</a>, we had the opportunity to work with a proven high-tech solution provider <a href="https://packet39.com/" >Packet39</a>.  Given the problem of creating a crane simulator in VR and collecting relevant performance measurements, we needed to model the physics of the crane, create controls for an operator seated in the cab, and map use of the controls to movements of the crane in VR.</p>
-								</header>
-								<div class="image main"><img src="images/CraneSimulator_large.png" alt="" /></div>
-								<p>This VR experience is a prototype simulator for training an operator to control a crane on a job site to perform
-									tasks. Virtual reality is an important training tool, to provide an environment to train which is safer and less
-									expensive than an actual crane. In it, the user is seated in a cab of a crane and presented with four levers and two
-									buttons. After tapping a button which serves as an ignition, the user can manipulate one lever to rotate the cab;
-									the user rotates with the cab. Other levers control boom elevation, sub boom extension, and lowering and raising a
-									magnetic hook. The magnet is turned on and off with another button.</p>
-								<p>In the simulation the user is tasked with controlling the crane to pick up a load and place it in an elevated target
-									position. Performance measures of speed and accuracy are provided to the user at the end of the simulation.</p>
-								<h2>Responsibilities</h2>
-									<div class="row">
-										<div > <!-- class="col-6 col-12-small"-->
-
-											
-											<ul class="alt">
-												<li>As Team Lead, led daily meetings with outlined agendas, kept a calendar, and updated the Tello board</li>
-												<li>Broke down needed functionality into tasks to implement</li>
-												<li>Helped initially shape crucial content and structure in the design document</li>
-												<li>Helped prepare critical questions for the client</li>
-												<li>Worked out the 3D physics in Unity both to replicate controls and the consequential movements of a crane</li>
-												<li>Enabled crane to have a magnetic hook to pick up and transport loads</li>
-												<li>Incorporated metrics on successful placement, and time taken to complete the task, and presented information tothe user at the end of the task</li>
-												<li>Created controls to rotate the cab left or right, raise or lower the boom, extend or retract the sub boom, and lower and raise the hook.</li>
-												<li>Created a button to act as an ignition switch which needed to be pressed to start and end the activity, and which enabled the other controls</li>
-												<li>Created a button to serve as a magnet on the hook, to pick up and release the load</li>
-												<li>Helped integrate setting materials</li>
-												<li>Helped to integrate sound effects accompanying button pressing, as well as for each of the four level controls</li>
-												<li>Displayed instructions to the user which could be referenced throughout the simulation by looking up</li>
-												<li>Worked on hand posture and movement to activate levers in VR</li>
-											</ul>
-
-										</div>
-									</div>
-										
-								<h2>Design Document</h2>
-								<div class="row">
-										<div > <!-- class="col-6 col-12-small" -->									
-											<p><a href="documents/Packet 39 Team 2 Experience Design Document.pdf">Packet 39 Crane Simulator: Experience Design Document</a> </p>
-										</div>
-									</div>
-
-							</section>
-
-							<!--
-							<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-							<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-							-->
-							
-
 					</div>
-
-				
-
-				<!-- Copyright -->
-				<div id="copyright">
-					<ul><li>mattkaminski@alum.mit.edu&nbsp;&nbsp;</li><a href="https://www.linkedin.com/in/kaminskimatthew/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a><li><a href="index.html#main">Matt Kaminski XR Portfolio</a></li></ul>
 				</div>
 
-			</div>
+				<h2>Media</h2>
+				<div class="row">
+					<span style="text-align: center">Video of Crane Simulator (3 mins)
+						<video width="700" controls>
+							<source src="video/cranesimulation1.mp4" type="video/mp4">Your browser does not support the
+							video tag.</video>
+					</span>
+				</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+				<h2>Design Document</h2>
+				<div class="row">
+					<div>
+						<p><a href="documents/Packet 39 Team 2 Experience Design Document.pdf">Packet 39 Crane
+								Simulator: Experience Design Document</a> </p>
+					</div>
+				</div>
 
-	</body>
+			</section>
+
+
+		</div>
+
+
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>mattkaminski@alum.mit.edu&nbsp;&nbsp;</li><a href="https://www.linkedin.com/in/kaminskimatthew/"
+					class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+				<li><a href="index.html#main">Matt Kaminski XR Portfolio</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
-
